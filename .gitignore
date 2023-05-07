@@ -76,3 +76,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Visual Studio Plugin
+.history
+
+# Github
+.github
