@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>PILIH KATEGORI</h1>
+<p>Event            : Indonesia Masters</p>
+<p>Hadiah           : Rp1.760.000.000/p>
+<p>Tanggal Mulai    : 10/09/2024</p>
+<p>Tanggal Selesai  : 15/09/2024</p>
+<p>Kategori         : S500</p>
+<p>Stadium          : Gelora Bung Karno Sports Palace</p>
+<p>Negara           : Indonesia</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Kategori</th>
+      <th scope="col">Partner</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Tunggal Putra</td>
+        <td>-</td>
+        <td><a href="#">Join</a></td>
+    </tr>
+    <tr>
+        <td>Ganda Putra</td>
+        <td>
+            <select class="form-select" id="dropdownGandaPutra">
+                <option value="Mathew Berge">Mathew Berge</option>
+                <option value="Kaleb Jacobi">Kaleb Jacobi</option>
+                <option value="Amaya Block">Amaya Block</option>
+                <option value="Weldon Daniel">Weldon Daniel</option>
+                <option value="Baby Romaguera">Baby Romaguera</option>
+                <option value="Ilene Bailey">Ilene Bailey</option>
+                <option value="Gilberto Wolff">Gilberto Wolff</option>
+            </select>
+        </td>
+        <td><a href="#">Join</a></td>
+    </tr>
+    <tr>
+        <td>Ganda Campuran</td>
+        <td>
+          <select class="form-select" id="dropdownGandaPutra">
+            <option value="Matt Haag">Matt Haag</option>
+            <option value="Durward Reilly">Durward Reilly</option>
+            <option value="Frank Ryan">Frank Ryan</option>
+            <option value="Kira Schinner">Kira Schinner</option>
+            <option value="Odell Crona">Odell Crona</option>
+            <option value="Erick Carter">Erick Carter</option>
+            <option value="Carlotta Senger">Carlotta Senger</option>
+            <option value="Pansy Yost">Pansy Yost</option>
+          </select>
+      </td>
+        <td><a href="#">Join</a></td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock content %}
