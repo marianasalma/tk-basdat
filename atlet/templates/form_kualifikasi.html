@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>FORM DATA KUALIFIKASI</h1>
+
+<form>
+    <div class="mb-3">
+      <label for="batchInput" class="form-label">Nomor batch</label>
+      <input type="text" class="form-control" id="batchInput">
+    </div>
+    <div class="mb-3">
+        <label for="tempatInput" class="form-label">Tempat pelaksanaan</label>
+        <select class="form-select" id="tempatInput">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Kuala Lumpur">Kuala Lumpur</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="tanggalInput" class="form-label">Tanggal pelaksanaan</label>
+        <select class="form-select" id="tanggalInput">
+            <option value="21/08/2023">21/08/2023</option>
+            <option value="13/09/2023">13/09/2023</option>
+        </select>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">NEXT</button>
+</form>
+
+{% endblock content %}

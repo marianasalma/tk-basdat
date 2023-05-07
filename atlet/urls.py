@@ -1,0 +1,12 @@
+from django.urls import path
+from atlet.views import *
+
+app_name = 'atlet'
+
+urlpatterns = [
+    path('form-kualifikasi', form_kualifikasi, name='form_kualifikasi'),
+    path('pertanyaan-kualifikasi', pertanyaan_kualifikasi, name='pertanyaan_kualifikasi'),
+    path('daftar-event/pilih-stadium', pilih_stadium, name='pilih_stadium'),
+    path('daftar-event/pilih-event', pilih_event, name='pilih_event'),
+    path('daftar-event/pilih-kategori', pilih_kategori, name='pilih_kategori'),
+]

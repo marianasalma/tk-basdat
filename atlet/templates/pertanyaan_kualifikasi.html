@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>PERTANYAAN KUALIFIKASI</h1>
+
+<form>
+    <div class="mb-3">
+        <label for="question1" class="form-label">1. Berapa ukuran standar nasional lapangan badminton PBSI?</label>
+        <div class="question1" id="question1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1a">
+            <label for="question1a" class="form-check-label" for="flexRadioDefault1">11,2 meter x 5,8 meter</label>
+        </div>
+        <div class="question1" id="question1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1b">
+            <label for="question1b" class="form-check-label" for="flexRadioDefault2">12,5 meter x 6,1 meter</label>
+        </div>
+        <div class="question1" id="question1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question1c">
+            <label for="question1c" class="form-check-label" for="flexRadioDefault2">13,4 meter x 6,1 meter</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="question2" class="form-label">2. Apa nama area di lapangan badminton yang berada di depan net dan diantara garis service?</label>
+        <div class="question2" id="question2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question2a">
+            <label for="question2a" class="form-check-label" for="flexRadioDefault1">Backcourt</label>
+        </div>
+        <div class="question2" id="question2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question2b">
+            <label for="question2b" class="form-check-label" for="flexRadioDefault2">Midcourt</label>
+        </div>
+        <div class="question2" id="question2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question2c">
+            <label for="question2c" class="form-check-label" for="flexRadioDefault2">Forecourt</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="question3" class="form-label">3. Apa nama teknik memukul shuttlecock yang bertujuan untuk mengirimkan shuttlecock setinggi mungkin ke arah belakang lapangan lawan?</label>
+        <div class="question3" id="question3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question3a">
+            <label for="question3a" class="form-check-label" for="flexRadioDefault1">Drop shot</label>
+        </div>
+        <div class="question3" id="question3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question3b">
+            <label for="question3b" class="form-check-label" for="flexRadioDefault2">Clear</label>
+        </div>
+        <div class="question3" id="question3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question3c">
+            <label for="question3c" class="form-check-label" for="flexRadioDefault2">Drive</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="question4" class="form-label">4. Siapa pemain bulu tangkis putra Indonesia yang pernah menempati peringkat satu dunia?</label>
+        <div class="question4" id="question4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question4a">
+            <label for="question4a" class="form-check-label" for="flexRadioDefault1">Taufik Hidayat</label>
+        </div>
+        <div class="question4" id="question4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question4b">
+            <label for="question4b" class="form-check-label" for="flexRadioDefault2">Marcus Fernaldi Gideon</label>
+        </div>
+        <div class="question4" id="question4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question4c">
+            <label for="question4c" class="form-check-label" for="flexRadioDefault2">Jonatan Christie</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="question5" class="form-label">5. Siapa pemain tunggal putri Tiongkok yang menjadi juara Olimpiade bulu tangkis pada tahun 2021?</label>
+        <div class="question5" id="question5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question5a">
+            <label for="question5a" class="form-check-label" for="flexRadioDefault1">Tai Tzu-ying</label>
+        </div>
+        <div class="question5" id="question5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question5b">
+            <label for="question5b" class="form-check-label" for="flexRadioDefault2">Nozomi Okuhara</label>
+        </div>
+        <div class="question5" id="question5">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="question5c">
+            <label for="question5c" class="form-check-label" for="flexRadioDefault2">Chen Yufei</label>
+        </div>
+    </div>    
+    <button type="submit" class="btn btn-primary">NEXT</button>
+</form>
+
+{% endblock content %}
