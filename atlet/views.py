@@ -15,3 +15,9 @@ def pilih_event(request):
 
 def pilih_kategori(request):
     return render(request, "pilih_kategori.html")
+
+def daftar_atlet(request):
+    return render(request, "daftar_atlet.html")
+
+def list_atlet(request):
+    return render(request, "list_atlet.html")
