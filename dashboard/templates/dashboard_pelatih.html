@@ -7,29 +7,25 @@
 
 <style>
 
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
 </style>
 
 {% endblock meta %}
 
 {% block content %}
 
-<div class="row">
-    <div class="col">
+{% include 'navbar_pelatih.html' %}
+
+<div class="row" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="col" style="display: flex; flex-direction: column; align-items: center;">
   
         <div class="card my-4 shadow">
         <div class="card-body border-dark" style="width: 500px;">
 
-        <div class="pb-3 pt-2 d-flex justify-content-center">
+        <div class="pb-3 pt-2 d-flex justify-content-center" style="display: flex; flex-direction: column; align-items: center;">
           <p class="h2">Profil Pelatih</p>
         </div>
 
-        <div class="pb-3 pt-2 d-flex justify-content-md-start">
+        <div class="pb-3 pt-2 d-flex justify-content-md-start" style="display: flex; flex-direction: column; align-items: center;">
             <p class=" pt-2"><strong>Nama: </strong>Sammie Schmid</p>
             <p class=" pt-2"><strong>Negara: </strong>France</p>
             <p class=" pt-2"><strong>Email: </strong>s.schmid@hotmail.com</p>
