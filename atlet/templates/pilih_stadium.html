@@ -1,49 +1,92 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<h1>DAFTAR EVENT</h1>
+{% load static %}
+{% block meta %}
+<link rel="stylesheet" href="{% static 'css/atlet.css' %}">
+{% endblock meta %}
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Nama Stadium</th>
-      <th scope="col">Negara</th>
-      <th scope="col">Kapasitas</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td>Tokyo Metropolitan Gymnasium</td>
-        <td>Jepang</td>
-        <td>10000</td>
-        <td><a href="#">Pilih</a></td>
-    </tr>
-    <tr>
-        <td>Gachibowli Indoor Stadium</td>
-        <td>India</td>
-        <td>5000</td>
-        <td><a href="#">Pilih</a></td>
-    </tr>
-    <tr>
-        <td>Eventfinda Stadium</td>
-        <td>Selandia Baru</td>
-        <td>4180</td>
-        <td><a href="#">Pilih</a></td>
-    </tr>
-    <tr>
-        <td>Royal Arena</td>
-        <td>Denmark</td>
-        <td>13000</td>
-        <td><a href="#">Pilih</a></td>
-    </tr>
-    <tr>
-        <td>Gelora Bung Karno Sports Palace</td>
-        <td>Indonesia</td>
-        <td>7166</td>
-        <td><a href="#">Pilih</a></td>
-    </tr>
-  </tbody>
-</table>
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="sticky collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Tes Kualifikasi</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Daftar Event</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Enrolled Event</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Daftar Sponsor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="col" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="card my-4 shadow col-md-8 col-sm-12 col-xs-12">
+            <div class="card-body border-dark">
+                <div class="pb-3 pt-4 d-flex justify-content-center">
+                    <p class="h2">DAFTAR EVENT</p>
+                </div>
+
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Nama Stadium</th>
+                    <th scope="col">Negara</th>
+                    <th scope="col">Kapasitas</th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tokyo Metropolitan Gymnasium</td>
+                        <td>Jepang</td>
+                        <td>10000</td>
+                        <td><a href="#">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gachibowli Indoor Stadium</td>
+                        <td>India</td>
+                        <td>5000</td>
+                        <td><a href="#">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Eventfinda Stadium</td>
+                        <td>Selandia Baru</td>
+                        <td>4180</td>
+                        <td><a href="#">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Royal Arena</td>
+                        <td>Denmark</td>
+                        <td>13000</td>
+                        <td><a href="#">Pilih</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gelora Bung Karno Sports Palace</td>
+                        <td>Indonesia</td>
+                        <td>7166</td>
+                        <td><a href="#">Pilih</a></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
