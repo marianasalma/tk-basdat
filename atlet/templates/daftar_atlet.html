@@ -1,30 +1,72 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<h1>DAFTAR ATLET</h1>
+{% load static %}
+{% block meta %}
+<link rel="stylesheet" href="{% static 'css/atlet.css' %}">
+{% endblock meta %}
 
-<form>
-    <div class="mb-3">
-        <label for="dropdownAtlet" class="form-label">Atlet yang mau didaftarkan: </label>
-        <select class="form-select" id="dropdownAtlet">
-            <option value="Mathew Berge">Mathew Berge</option>
-            <option value="Kaleb Jacobi">Kaleb Jacobi</option>
-            <option value="Amaya Block">Amaya Block</option>
-            <option value="Weldon Daniel">Weldon Daniel</option>
-            <option value="Baby Romaguera">Baby Romaguera</option>
-            <option value="Ilene Bailey">Ilene Bailey</option>
-            <option value="Gilberto Wolff">Gilberto Wolff</option>
-            <option value="Matt Haag">Matt Haag</option>
-            <option value="Durward Reilly">Durward Reilly</option>
-            <option value="Frank Ryan">Frank Ryan</option>
-            <option value="Kira Schinner">Kira Schinner</option>
-            <option value="Odell Crona">Odell Crona</option>
-            <option value="Erick Carter">Erick Carter</option>
-            <option value="Carlotta Senger">Carlotta Senger</option>
-            <option value="Pansy Yost">Pansy Yost</option>
-      </select>
-    </div>    
-    <button type="submit" class="btn btn-primary">SUBMIT</button>
-</form>
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="sticky collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Tes Kualifikasi</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Daftar Atlet</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">List Atlet</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class="row" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="col" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="card my-4 shadow">
+            <div class="card-body border-dark" style="width: 700px;">
+                <div class="pb-3 pt-4 d-flex justify-content-center">
+                <p class="h2">DAFTAR ATLET</p>
+                </div>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="dropdownAtlet" class="form-label">Atlet yang mau didaftarkan: </label>
+                        <select class="form-select" id="dropdownAtlet">
+                            <option value="Mathew Berge">Mathew Berge</option>
+                            <option value="Kaleb Jacobi">Kaleb Jacobi</option>
+                            <option value="Amaya Block">Amaya Block</option>
+                            <option value="Weldon Daniel">Weldon Daniel</option>
+                            <option value="Baby Romaguera">Baby Romaguera</option>
+                            <option value="Ilene Bailey">Ilene Bailey</option>
+                            <option value="Gilberto Wolff">Gilberto Wolff</option>
+                            <option value="Matt Haag">Matt Haag</option>
+                            <option value="Durward Reilly">Durward Reilly</option>
+                            <option value="Frank Ryan">Frank Ryan</option>
+                            <option value="Kira Schinner">Kira Schinner</option>
+                            <option value="Odell Crona">Odell Crona</option>
+                            <option value="Erick Carter">Erick Carter</option>
+                            <option value="Carlotta Senger">Carlotta Senger</option>
+                            <option value="Pansy Yost">Pansy Yost</option>
+                    </select>
+                    </div>    
+                    <div class="pb-3 pt-4 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
