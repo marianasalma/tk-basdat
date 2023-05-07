@@ -21,3 +21,12 @@ def daftar_atlet(request):
 
 def list_atlet(request):
     return render(request, "list_atlet.html")
+
+def daftar_sponsor(request):
+    return render(request, "daftar_sponsor.html")
+
+def enrolled_event(request):
+    return render(request, "enrolled_event.html")
+
+def list_event(request):
+    return render(request, "list_event.html")
