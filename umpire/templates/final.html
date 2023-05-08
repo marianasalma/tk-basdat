@@ -17,7 +17,8 @@
     }
     #centered-button {
 			display: block;
-			margin: 20px auto;
+            margin: 20px auto;
+
 		}
     h1, h3 {
 			text-align: center;
@@ -42,14 +43,13 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-        
     }
 </style>
 {% endblock meta %}
 {% block content %}
 {% include 'navbar_umpire.html' %}
 
-<h1>PERTANDINGAN PEREMPAT FINAL</h1>
+<h1>PERTANDINGAN JUARA 3</h1>
 <h3>[00:00]</h3>
 <table>
     <thead>
@@ -62,8 +62,8 @@
     </thead>
     <tbody>
         <tr>
-            <td data-label="Kolom 1">A</td>
-            <td data-label="Kolom 2">B</td>
+            <td data-label="Kolom 1">D</td>
+            <td data-label="Kolom 2">E</td>
             <td data-label="Kolom 3"><div>
       <button id="decrement">-</button>
       <span id="count">0</span>
@@ -74,52 +74,37 @@
       <span id="count">0</span>
       <button id="increment">+</button>
     </div></td>
-        </tr>
-        <tr>
-            <td data-label="Kolom 1">C</td>
-            <td data-label="Kolom 2">D</td>
-            <td data-label="Kolom 3"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div></td>
-            <td data-label="Kolom 4"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div></td>
-        </tr>
-        <tr>
-            <td data-label="Kolom 1">E</td>
-            <td data-label="Kolom 2">F</td>
-            <td data-label="Kolom 3"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div></td>
-            <td data-label="Kolom 4"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div></td>
-        </tr>
-        <tr>
-            <td data-label="Kolom 1">G</td>
-            <td data-label="Kolom 2">H</td>
-            <td data-label="Kolom 3"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div></td>
-            <td data-label="Kolom 4"><div>
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div>
-  </td>
         </tr>
         
     </tbody>
 </table>
-<button id="centered-button">Next</button>
+<h1>PERTANDINGAN FINAL</h1>
+<h3>[00:00]</h3>
+<table>
+    <tbody><thead>
+        <tr>
+            <th>Tim 1</th>
+            <th>Tim 2</th>
+            <th>Skor Tim 1</th>
+            <th>Skor Tim 2</th>
+        </tr>
+    </thead>
+        <tr>
+            <td data-label="Kolom 1">A</td>
+            <td data-label="Kolom 2">G</td>
+            <td data-label="Kolom 3"><div>
+      <button id="decrement">-</button>
+      <span id="count">0</span>
+      <button id="increment">+</button>
+    </div></td>
+            <td data-label="Kolom 4"><div>
+      <button id="decrement">-</button>
+      <span id="count">0</span>
+      <button id="increment">+</button>
+    </div></td>
+        </tr>
+        
+    </tbody>
+</table>
+<button id="centered-button">Done</button>
 {% endblock content %}
