@@ -17,3 +17,7 @@ def show_final(request):
 
 def show_hasil(request):
     return render(request, "hasil.html")
+
+
+def list_event(request):
+    return render(request, "list_event.html")
