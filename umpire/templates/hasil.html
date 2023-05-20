@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block meta %}
+<title>Hello, world!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* styling for the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    #centered-button {
+			display: block;
+            margin: 20px auto;
+
+		}
+    h1, h3, h2, p {
+			text-align: center;
+		}
+    /* styling for responsive design */
+    @media only screen and (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        td:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .text-box {
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-radius: 5px;
+			margin: 10px auto;
+			background-color: #f9f9f9;
+			text-align: center;
+			width: 80%;
+			max-width: 600px;
+		}
+    }
+</style>
+{% endblock meta %}
+{% block content %}
+{% include 'navbar_umpire.html' %}
+    <h2>HASIL PERTANDINGAN Denmark Open</h2>
+    <p>Nama Event : Denmark Open</p>
+    <p>Stadium : Royal</p>
+    <p>Hadiah : 2000000</p>
+    <p>Kategori Superseries : S750</p>
+    <p>Tanggal Mulai : 17/10/2023</p>
+    <p>Tanggal Selesai : 22/10/2023</p>
+    <p>Kapasitas : 3000</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tahap</th>
+            <th>Nama Tim</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Kolom 1">Juara 1</td>
+            <td data-label="Kolom 2">A</td>
+
+        </tr>
+        <tr>
+            <td data-label="Kolom 1">Juara 2</td>
+            <td data-label="Kolom 2">G</td>
+        </tr>
+        <tr>
+            <td data-label="Kolom 1">Juara 3</td>
+            <td data-label="Kolom 2">D</td>
+        </tr>
+        <tr>
+            <td data-label="Kolom 1">Semifinal</td>
+            <td data-label="Kolom 2">E</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Perempat Final</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>H</td>
+          </tr>
+    </tbody>
+</table>
+
+  
+{% endblock content %}
